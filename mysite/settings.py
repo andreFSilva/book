@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # app terceiros
     'django_extensions',
+    'taggit',
     # app local
     'blog.apps.BlogConfig',
     #'django_app',
