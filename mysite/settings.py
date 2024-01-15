@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     # app local
     'blog.apps.BlogConfig',
+    #'django_app',
 ]
 
 MIDDLEWARE = [
@@ -124,5 +125,17 @@ STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+
+# EMAIL COM DJANGO SMTP
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# EMAIL COM GAMIL
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'andrealekhine@gmail.com'
+EMAIL_HOST_PASSWORD = 'oaeoyhafxdwrkrvj'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+DEFAULT_FROM_EMAIL = 'andrealekhine@gmail.com'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
