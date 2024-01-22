@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1 # ID do site
 
 # Application definition
 
@@ -37,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Adicionando mapa do site
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     # app terceiros
     'django_extensions',
     'taggit',
